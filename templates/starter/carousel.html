@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Pick your own fonts. Avoid the defaults everyone uses; the font IS the brand. -->
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,800&family=Spectral:ital@1&display=swap" rel="stylesheet">
+<style>
+  /* ============ YOUR THEME - the only block you should need to touch ============ */
+  :root{
+    --bg:#0D0C0B;
+    --ink:#F2EDE4;
+    --dim:#9A938A;
+    --accent:#E2602C;     /* one accent. one. */
+    --line:#262320;
+    --display:'Bricolage Grotesque',sans-serif;
+    --serif:'Spectral',serif;
+  }
+  /* ============================================================================== */
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;flex-direction:column;align-items:center;gap:24px;padding:48px}
+  .slide{width:420px;height:525px;background:var(--bg);color:var(--ink);position:relative;overflow:hidden;
+    padding:36px 32px;display:flex;flex-direction:column;font-family:var(--display)}
+  .tag{font-size:9px;letter-spacing:.28em;color:var(--dim);text-transform:uppercase}
+  .num{position:absolute;right:14px;bottom:8px;font-size:120px;font-weight:800;line-height:1;
+    color:transparent;-webkit-text-stroke:1px var(--line)}
+  h1{font-weight:800;font-size:44px;line-height:1.04;margin-top:auto}
+  h2{font-weight:800;font-size:34px;line-height:1.1;margin:18px 0 14px}
+  p{font-size:15px;line-height:1.7;color:var(--dim)}
+  p b{color:var(--ink);font-weight:700}
+  .ser{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--ink);line-height:1.6}
+  .acc{color:var(--accent)}
+  .rule{height:2px;width:46px;background:var(--accent);margin:16px 0}
+  .foot{margin-top:auto;font-size:10px;letter-spacing:.12em;color:var(--dim)}
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: the hook. One idea, stated like you mean it. -->
+<div class="slide">
+  <div class="tag">your-handle / 01</div>
+  <h1>the hook goes here.<br><span class="acc">the twist goes here.</span></h1>
+  <div class="num">01</div>
+</div>
+
+<!-- SLIDE 2-5: one idea per slide. If a slide has two ideas, it's two slides. -->
+<div class="slide">
+  <div class="tag">section label</div>
+  <h2>the point of this slide.</h2>
+  <p class="ser">An italic line that sounds like a person, not a deck.</p>
+  <div class="rule"></div>
+  <p>Supporting detail. Short. <b>Bold the part they'd highlight.</b></p>
+  <div class="num">02</div>
+</div>
+
+<div class="slide">
+  <div class="tag">section label</div>
+  <h2>another point.</h2>
+  <p>Body copy.</p>
+  <div class="num">03</div>
+</div>
+
+<div class="slide">
+  <div class="tag">section label</div>
+  <h2>another point.</h2>
+  <p>Body copy.</p>
+  <div class="num">04</div>
+</div>
+
+<div class="slide">
+  <div class="tag">section label</div>
+  <h2>the payoff.</h2>
+  <p class="ser">The line they screenshot.</p>
+  <div class="num">05</div>
+</div>
+
+<!-- SLIDE 6: the close. No "follow for more". Say something worth ending on. -->
+<div class="slide">
+  <div class="tag">your-handle / end</div>
+  <h1>the closing<br><span class="acc">detonation.</span></h1>
+  <div class="foot">your-link-here</div>
+  <div class="num">06</div>
+</div>
+
+</body>
+</html>

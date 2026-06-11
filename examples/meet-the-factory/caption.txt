@@ -1,0 +1,11 @@
+i fired myself as my own design intern.
+
+every carousel you have ever posted cost you an hour of dragging text boxes around a design tool. mine cost a stylesheet, once.
+
+here is the whole trick: slides are just HTML divs. one theme block at the top decides the colors, the fonts, the spacing. a 130-line python script opens a headless browser, finds every slide, and screenshots each one at exactly 1080x1350. the folder it lands in already contains the caption (you are reading the template for one right now).
+
+the part nobody says out loud: the design tool was never the creative part. the idea is creative. the voice is creative. the taste is creative. placing rectangles is labor, and labor is what machines are for.
+
+what this unlocks is volume without drift. when the design system lives in code, post #40 looks like it belongs next to post #1, and you never spent a single morning "finding the vibe" again.
+
+the factory is open source. link in bio. clone it, change one variable, and the whole deck becomes yours.

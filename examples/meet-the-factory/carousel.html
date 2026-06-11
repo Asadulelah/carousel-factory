@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Spectral:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  /* ============ THEME - change these, the whole deck restyles ============ */
+  :root{
+    --bg:#0D0C0B;          /* canvas */
+    --ink:#F2EDE4;         /* main text */
+    --dim:#9A938A;         /* secondary text */
+    --accent:#E2602C;      /* ONE accent. use it like a sniper, not a paintbrush */
+    --line:#262320;
+    --display:'Bricolage Grotesque',sans-serif;
+    --serif:'Spectral',serif;
+  }
+  /* ======================================================================= */
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#1a1a1a;display:flex;flex-direction:column;align-items:center;gap:24px;padding:48px}
+  .slide{width:420px;height:525px;background:var(--bg);color:var(--ink);position:relative;overflow:hidden;
+    padding:36px 32px;display:flex;flex-direction:column;font-family:var(--display)}
+  .tag{font-size:9px;letter-spacing:.28em;color:var(--dim);text-transform:uppercase}
+  .num{position:absolute;right:14px;bottom:8px;font-size:120px;font-weight:800;line-height:1;
+    color:transparent;-webkit-text-stroke:1px var(--line)}
+  h1{font-weight:800;font-size:44px;line-height:1.04;letter-spacing:-.01em;margin-top:auto}
+  h2{font-weight:800;font-size:34px;line-height:1.1;margin:18px 0 14px}
+  p{font-size:15px;line-height:1.7;color:var(--dim)}
+  p b{color:var(--ink);font-weight:700}
+  .ser{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--ink);line-height:1.6}
+  .acc{color:var(--accent)}
+  .rule{height:2px;width:46px;background:var(--accent);margin:16px 0}
+  .foot{margin-top:auto;font-size:10px;letter-spacing:.12em;color:var(--dim)}
+  .stack{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+  .row{display:flex;gap:10px;align-items:baseline;border:1px solid var(--line);padding:11px 13px;font-size:13px}
+  .row i{font-style:normal;color:var(--accent);font-weight:700;font-size:11px}
+  code{font-family:monospace;background:var(--line);padding:2px 7px;border-radius:3px;font-size:12px;color:var(--ink)}
+</style>
+</head>
+<body>
+
+<div class="slide">
+  <div class="tag">carousel-factory / 01</div>
+  <h1>your carousels are handmade.<br><span class="acc">mine come out of a factory.</span></h1>
+  <div class="num">01</div>
+</div>
+
+<div class="slide">
+  <div class="tag">the pipeline</div>
+  <h2>one HTML file in.<br>a finished deck out.</h2>
+  <div class="stack">
+    <div class="row"><i>01</i><span>write slides as plain HTML divs</span></div>
+    <div class="row"><i>02</i><span>a script screenshots each one at 1080×1350</span></div>
+    <div class="row"><i>03</i><span>caption ships in the same folder</span></div>
+    <div class="row"><i>04</i><span>post. repeat tomorrow.</span></div>
+  </div>
+  <div class="num">02</div>
+</div>
+
+<div class="slide">
+  <div class="tag">why HTML</div>
+  <h2>design systems beat design moods.</h2>
+  <p class="ser">Canva asks how you feel today. A stylesheet doesn't care.</p>
+  <div class="rule"></div>
+  <p>Every slide inherits one theme block: <b>change a single variable and the entire deck restyles.</b> Consistency stops being discipline and becomes physics.</p>
+  <div class="num">03</div>
+</div>
+
+<div class="slide">
+  <div class="tag">the machinery</div>
+  <h2>the whole factory is ~130 lines of Python.</h2>
+  <p>One headless browser. It finds every <code>.slide</code>, measures it, and clips a pixel-perfect screenshot at exactly the size Instagram wants.</p>
+  <div class="rule"></div>
+  <p>No design tool subscription. No export dialog. <b>No hands.</b></p>
+  <div class="num">04</div>
+</div>
+
+<div class="slide">
+  <div class="tag">the honest part</div>
+  <h2>what stays human:</h2>
+  <p class="ser">the idea. the voice. the taste.</p>
+  <div class="rule"></div>
+  <h2 style="margin-top:6px">what stops being manual:</h2>
+  <p class="ser">everything else.</p>
+  <div class="num">05</div>
+</div>
+
+<div class="slide">
+  <div class="tag">carousel-factory / end</div>
+  <h1>clone it.<br>theme it.<br><span class="acc">ship daily.</span></h1>
+  <div class="foot">github.com/Asadulelah/carousel-factory</div>
+  <div class="num">06</div>
+</div>
+
+</body>
+</html>
